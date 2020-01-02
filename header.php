@@ -14,6 +14,10 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <Script>
+         var iconcategory1="<?php $this->options->themeUrl('img/imageres_4.ico'); ?>";
+         var iconcategory2="<?php $this->options->themeUrl('img/imageres_5.ico'); ?>";
+    </script>
 
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -42,7 +46,11 @@
     <?php endif; ?>
        
         <a class="logo-title" href="<?php $this->options->siteUrl(); ?>"><span><?php $this->options->title() ?></span></a>
-        <img class="more" src="<?php $this->options->themeUrl('img/more.png'); ?>" />
+        <div class="right-top">
+            <img src="<?php $this->options->themeUrl('img/min.png'); ?>" />
+            <img src="<?php $this->options->themeUrl('img/max.png'); ?>" />
+            <img src="<?php $this->options->themeUrl('img/close.png'); ?>" />
+        </div>
     </div>
     <nav class="nav-menu">
         <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
@@ -50,6 +58,7 @@
         <?php while($pages->next()): ?>
         <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
+        <img class="more" src="<?php $this->options->themeUrl('img/more.png'); ?>" />
     </nav>
     <div class="line"></div>
     <div class="breadcrumbs">

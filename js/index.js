@@ -16,9 +16,8 @@ $(window).resize(function (){
     initWin10Height();
 });
 function initLeftMenuIcon(){
-    var host='http://'+window.location.host;
-    $('.category-level-0').prepend('<img class="left-icon" src="'+host+'/usr/themes/win10explorer/img/imageres_4.ico" />')
-    $('.category-child').prepend('<img class="left-icon" src="'+host+'/usr/themes/win10explorer/img/imageres_5.ico" />')
+    $('.category-level-0').prepend('<img class="left-icon" src="'+iconcategory1+'" />')
+    $('.category-child').prepend('<img class="left-icon" src="'+iconcategory2+'" />')
 }
 function initArchiveType(){
     var typeHtml=$('.archive-title .table-head-type a').eq(1).html();

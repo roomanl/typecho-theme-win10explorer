@@ -95,8 +95,20 @@ h4{
 .logo-title{
     color: #444;
 }
+.right-top{
+    float: right;
+}
+.right-top img{
+    width:20px;
+    height: 20px;
+    padding: 5px;
+}
+.right-top img:hover{
+    background: rgba(0, 0, 0, .1);
+}
 .nav-menu{
     padding: 5px 0;
+    position: relative;
 }
 .nav-menu a{
     padding: 2px 15px;
@@ -383,7 +395,7 @@ textarea{
     border: 1px solid rgba(0, 0, 0, .1);
 }
 #footer{
-    height: 30px;
+    min-height: 30px;
     width: 100%;
     clear: both;
     text-align: center;
@@ -412,6 +424,9 @@ textarea{
     padding: 5px;
     cursor: pointer;
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .line{
     border-top: 1px solid rgba(0, 0, 0, .1);
