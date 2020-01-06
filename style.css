@@ -101,7 +101,7 @@ h4{
 .right-top img{
     width:20px;
     height: 20px;
-    padding: 5px;
+    padding: 5px 8px;
 }
 .right-top img:hover{
     background: rgba(0, 0, 0, .1);
@@ -139,8 +139,11 @@ h4{
     border: 1px solid rgba(0, 0, 0, .1);
     float: left;
     width: 680px;
-    padding: 0 5px;
+    /* padding: 0 5px; */
     line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .breadcrumbs-center  a{
     padding: 5px;
@@ -242,9 +245,15 @@ h4{
 
 .table-head{
     height: 30px;
+    position: absolute;
+    background: #fff;
+    width: 800px;
 }
 .table-head-title{
     width: 435px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .table-head-time{
     width: 150px;
@@ -264,8 +273,8 @@ h4{
     height: 30px;
 }
 .table-head-title img{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     float: left;
     padding-right: 5px;
 }
@@ -279,12 +288,17 @@ h4{
 
 .comment-userinfo{
     float: left;
-    width: 66%;
+    width: 70%;
     margin: 0;
 }
 .comment-user-input{
     float: left;
-    width: 33%;
+    width: 70%;
+    margin: 0;
+}
+.comment-user-submit{
+    float: left;
+    width: 30%;
     margin: 0;
 }
 .comment-user-input input{
@@ -293,7 +307,7 @@ h4{
     padding: 2px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
-.comment-user-input button{
+.comment-user-submit button{
     height: 35px;
     width: 60px;
     cursor: pointer;
@@ -371,6 +385,12 @@ h4{
 .post{
     padding:0 20px;
 }
+.post-content img{
+    max-width: 100%;
+}
+.post-content a{
+    color: rgb(64, 101, 153);
+}
 .post-content p{
     line-height: 25px;
     color: #666;
@@ -379,7 +399,7 @@ h4{
     text-align: right;
 }
 .post-near{
-    height: 40px;
+    /* height: 40px; */
     line-height: 40px;
 }
 .post-near li{
@@ -470,7 +490,7 @@ textarea{
         width: 100%;
     }
     .table-head-title{
-        width: 100%;
+        width: 95%;
     }
     .table-head-time{
         display:none;
@@ -480,6 +500,9 @@ textarea{
     }
     .more{
         display:block;
+    }
+    .table-head{
+        width: 100%;
     }
 }
 @media screen and (min-width:768px) and (max-width:1200px){
@@ -491,6 +514,9 @@ textarea{
     }
     .container-right{
         width: 569px;
+    }
+    .table-head{
+        width: 549px;
     }
     .breadcrumbs{
         display:block;

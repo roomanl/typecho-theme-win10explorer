@@ -6,7 +6,7 @@
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
     <?php _e('power by <a href="http://www.typecho.org">Typecho</a>'); ?>.
-    <?php _e('Theme made by <a href="http://rootvip.cn/">山顶洞洞人</a>'); ?>.
+    <?php _e('Theme by <a href="http://rootvip.cn/">山顶洞洞人</a>'); ?>.
 </footer><!-- end #footer -->
 
 <?php $this->footer(); ?>

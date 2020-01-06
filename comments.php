@@ -7,7 +7,7 @@
         <div class="cancel-comment-reply">
         <?php $comments->cancelReply(); ?>
         </div>
-    
+        <div style="clear:both;"></div>
     	<h4 id="response"><?php _e('添加新评论'); ?></h4>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <p>
@@ -20,15 +20,15 @@
     		<p class="comment-user-input">
     			<input type="text" name="author" id="author" class="text" placeholder="昵称" value="<?php $this->remember('author'); ?>" required />
     		</p>
-    		<p class="comment-user-input">
+    		<!-- <p class="comment-user-input">
     			<input type="email" name="mail" id="mail" class="text" placeholder="Email" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
-    		</p>
+    		</p> -->
     		<!-- <p class="comment-user-input">
     			<input type="url" name="url" id="url" class="text" placeholder="网站" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
     		</p> -->
             <?php endif; ?>
 
-    		<p class="comment-user-input" style="text-align: right;">
+    		<p class="comment-user-submit" style="text-align: right;">
                 <button type="submit" class="submit"><?php _e('提交'); ?></button>
             </p>
                 </div>

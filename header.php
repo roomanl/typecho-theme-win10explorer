@@ -42,9 +42,8 @@
     <?php else: ?>
         <a class="logo" href="<?php $this->options->siteUrl(); ?>">
             <img src="<?php $this->options->themeUrl('img/imageres_25.ico'); ?>" />
-        </a>
     <?php endif; ?>
-       
+    </a>
         <a class="logo-title" href="<?php $this->options->siteUrl(); ?>"><span><?php $this->options->title() ?></span></a>
         <div class="right-top">
             <img src="<?php $this->options->themeUrl('img/min.png'); ?>" />
@@ -74,6 +73,7 @@
             </a>
             <?php if($this->is('index')): ?> 最新文章
             <?php elseif($this->is('post') || $this->is('page')): ?>
+                <?php $this->category('>'); ?>
                 <span>> <?php $this->title() ?> </span>  
             <?php elseif($this->is('category')): ?> 
                 <?php $this->category('>'); ?>
