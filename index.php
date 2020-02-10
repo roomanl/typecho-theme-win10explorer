@@ -22,6 +22,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					<div class="archive-title" title="<?php $this->title() ?>">
 						<div class="table-head-title">
 						<img src='<?php $this->options->themeUrl('img/txt.png'); ?>' />
+						<!-- <img src='
+							<?php
+								$childType=getLastType($this);
+								if(!$childType){
+									$this->options->themeUrl('img/txt.png');
+								}else{
+									$this->options->themeUrl('img/'.strtolower($childType).'.png');
+								}
+							 ?>
+							 ' /> -->
 							<?php $this->title() ?>
 						</div>
 						<div class="table-head-time"><?php $this->date(); ?></div>

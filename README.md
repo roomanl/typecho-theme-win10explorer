@@ -1,7 +1,16 @@
 # typecho-theme-win10explorer
 ### typecho win10资源管理器主题<br/>
-自适应手机<br/>
+自适应手机，点击顶部可拖动窗口<br/>
 把主题文件夹命名为win10explorer，放到usr\themes目录下，后台启用主题即可<br/>
 [主题预览](http://rootvip.cn/)
+### 自定义前面文章的图标
+如需自定义文章前面是我图标需要提前准备好对应PNG图标。图标的名称以最后一级分类的名称命名，步骤如下：<br/>
+1、把图标名称重命名。<br/>
+分类只有一级目录，图标就命名为一级分类的名称<br/>
+如果分类有多级则用最后一级分类名称命名。比如预览网站里，一级目录为“C”。二级目录有“python”、“JAVA”、“android”分类。就需要把图标名称命名为python.png、JAVA.png、android.png<br/>
+2、把图标放在主题img目录里。<br/>
+3、找到index.php和archive.php文件。把下图1部分代码删掉或注释，然后把2部分代码取消注释。<br/>
+![](./1.png)<br/>
+1处代码为默认全部使用txt图标。
 ## License
 Apache License 2.0

@@ -14,8 +14,8 @@
 				<a href="<?php $this->permalink() ?>">
 					<div class="archive-title">
 						<div class="table-head-title">
-							<!-- <img src="<?php $this->options->themeUrl('img/txt.png'); ?>" /> -->
-							<img src='
+							<img src="<?php $this->options->themeUrl('img/txt.png'); ?>" />
+							<!-- <img src='
 							<?php
 								$childType=getLastType($this);
 								if(!$childType){
@@ -24,7 +24,7 @@
 									$this->options->themeUrl('img/'.strtolower($childType).'.png');
 								}
 							 ?>
-							 ' />
+							 ' /> -->
 							<?php $this->title() ?>
 						</div>
 						<div class="table-head-time"><?php $this->date(); ?></div>
