@@ -9,7 +9,6 @@ $(function(){
         setTimeout(() => {
             initWin10Height();
         }, 510);
-       
     })
 });
 $(window).resize(function (){

@@ -57,8 +57,9 @@
         <?php while($pages->next()): ?>
         <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
-        <img class="more" src="<?php $this->options->themeUrl('img/more.png'); ?>" />
+       
     </nav>
+    <img class="more" src="<?php $this->options->themeUrl('img/more.png'); ?>" />
     <div class="line"></div>
     <div class="breadcrumbs">
         <div class="breadcrumbs-left">

@@ -1,6 +1,7 @@
 <?php
 /**
  * win10资源管理器主题
+ * git:https://github.com/roomanl/typecho-theme-win10explorer
  * 
  * @package win10explorer theme
  * @author 山顶洞洞人

@@ -109,6 +109,10 @@ h4{
 .nav-menu{
     padding: 5px 0;
     position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
 }
 .nav-menu a{
     padding: 2px 15px;
@@ -446,7 +450,7 @@ textarea{
     display: none;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 35px;
 }
 .line{
     border-top: 1px solid rgba(0, 0, 0, .1);
@@ -504,6 +508,9 @@ textarea{
     .table-head{
         width: 100%;
     }
+    .nav-menu{
+        width: 85%;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1200px){
     .win10-width{
@@ -533,6 +540,9 @@ textarea{
     .table-head-type{
         width: 120px;
     }
+    .nav-menu{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 1200px){
     .win10-width{
@@ -543,5 +553,8 @@ textarea{
     }
     .container-left{
         display:block;
+    }
+    .nav-menu{
+        width: 100%;
     }
 }
