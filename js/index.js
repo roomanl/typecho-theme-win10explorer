@@ -10,6 +10,71 @@ $(function(){
             initWin10Height();
         }, 510);
     })
+    //------------------------------------//
+    var mini=false,oldW=$('.win10-width').width()
+    var max=false,oldrw=$('.container-right').width()
+
+    $('.right-top img').eq(0).on('click',function(){ 
+        closeMax()
+        if(mini){
+            cloasMini()
+        }else{
+            mini=true
+            $('.win10-container').css({height:'30px',width:'300px',top:'initial',left:'200px',bottom:'0'})
+            $('#footer').hide()
+            $('#body').hide()
+            $('.nav-menu').hide()
+            $('.breadcrumbs').hide()
+        }  
+    })
+    
+    $('.right-top img').eq(1).on('click',function(){ 
+        cloasMini()
+        if(max){
+            closeMax()
+        }else{
+            max=true
+            $('.win10-container').css({height:'100%',width:'100%'})
+            var newrw=$('.win10-container').width()-$('.container-left').width()-5
+            $('.container-right').css({width:newrw+'px'})
+            initWin10Height();
+        }  
+    })
+    $('.right-top img').eq(2).on('click',function(){ 
+        cloasMini()
+        closeMax()
+        $('.win10-container').hide(500)
+    })
+
+    var dblclick = 0;
+    $('.mypc').on('click', function () {
+        dblclick++;
+        setTimeout(function () {
+            dblclick = 0;
+        }, 500);
+        if (dblclick > 1) {
+            $('.win10-container').show(500)
+            dblclick = 0;
+        }
+    })
+    function cloasMini(){
+        if(mini){
+            mini=false
+            $('.win10-container').css({height:'90%',width:oldW+'px',top:'50%',left:'50%',bottom:'initial'})
+            $('#footer').show()
+            $('#body').show()
+            $('.nav-menu').show()
+            $('.breadcrumbs').show()
+        }
+    }
+    function closeMax(){
+        if(max){
+            max=false
+            $('.win10-container').css({height:'90%',width:oldW+'px'})
+            $('.container-right').css({width:oldrw+'px'})
+            initWin10Height();
+        }
+    }
 });
 $(window).resize(function (){
     initWin10Height();

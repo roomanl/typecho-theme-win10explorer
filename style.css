@@ -80,6 +80,21 @@ h4{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.pc-icon{
+    margin: 20px;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+}
+.pc-icon:hover{
+    background: #eee;
+}
+.mypc{
+    width: 50px;
+    height: 50px;
+}
 .win10-top{
     height: 30px;
     line-height: 30px;
@@ -410,6 +425,13 @@ h4{
     float: left;
     margin-right: 50px;
     /* height: 30px; */
+}
+.post-sign img{
+    width:30px;
+    margin-bottom: -5px;
+}
+.post-sign span{
+    font-size: 14px;;
 }
 #response{
     color: #888;

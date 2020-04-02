@@ -32,6 +32,10 @@
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->
 <div class="win10-main">
+<div class="pc-icon">
+<img class="mypc" src="<?php $this->options->themeUrl('img/imageres_2.ico'); ?>" />
+<div>此电脑</div>
+</div>
 <div id="win10" class="win10-container win10-width">
 <header id="header">
     <div class="win10-top" id="win10top">
