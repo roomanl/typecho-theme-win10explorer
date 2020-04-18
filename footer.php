@@ -5,8 +5,8 @@
 <div class="line"></div>
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('power by <a href="http://www.typecho.org">Typecho</a>'); ?>.
-    <?php _e('Theme by <a href="http://rootvip.cn/">山顶洞洞人</a>'); ?>.
+    <?php _e('power by <a href="http://www.typecho.org">Typecho</a>'); ?>.<!-- 此行勿删 -->
+    <?php _e('Theme by <a href="http://rootvip.cn/">山顶洞洞人</a>'); ?>.<!-- 此行勿删，请保留主题作者署名 -->
 </footer><!-- end #footer -->
 
 <?php $this->footer(); ?>
