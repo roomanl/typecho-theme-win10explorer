@@ -3,6 +3,11 @@
 自适应手机，点击顶部可拖动窗口<br/>
 把主题文件夹命名为win10explorer，放到usr\themes目录下，后台启用主题即可<br/>
 [主题预览](http://rootvip.cn/)
+### 还有
+请不要删除署名，因为我很骚<br/>
+![](./screenshot/2.jpg)<br/>
+![](./screenshot/3.png)<br/>
+![](./screenshot/4.png)<br/>
 ### 更新日志
 #### 2020/04/02
 实现右上角三个按钮的功能(最小化、最大化、关闭三个功能,最小化、最大化不适用手机)
@@ -15,7 +20,7 @@
 如果分类有多级则用最后一级分类名称命名。比如预览网站里，一级目录为“C”。二级目录有“python”、“java”、“android”分类。就需要把图标名称命名为python.png、java.png、android.png。名称有字母，字母全部用小写，中文和数字没有要求<br/>
 2、把图标放在主题img目录里。<br/>
 3、找到index.php和archive.php文件。把下图1部分代码删掉或注释，然后把2部分代码取消注释。<br/>
-![](./1.png)<br/>
+![](./screenshot/1.png)<br/>
 1处代码为默认全部使用txt图标。
 ## License
 Apache License 2.0
