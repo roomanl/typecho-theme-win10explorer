@@ -4,10 +4,8 @@
 把主题文件夹命名为win10explorer，放到usr\themes目录下，后台启用主题即可<br/>
 [主题预览](http://rootvip.cn/)
 ### 还有
-请不要删除署名，因为我很骚<br/>
-![](https://sddman.oss-cn-shenzhen.aliyuncs.com/typecho/win10/2.jpg)<br/>
-![](https://sddman.oss-cn-shenzhen.aliyuncs.com/typecho/win10/3.png)<br/>
-![](https://sddman.oss-cn-shenzhen.aliyuncs.com/typecho/win10/4.png)<br/>
+请保留作者署名<br/>
+
 ### 更新日志
 #### 2020/04/02
 实现右上角三个按钮的功能(最小化、最大化、关闭三个功能,最小化、最大化不适用手机)
