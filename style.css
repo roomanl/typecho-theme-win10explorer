@@ -80,20 +80,23 @@ h4{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.desktop{
+    position: absolute
+}
 .pc-icon{
     margin: 20px;
     width: 60px;
     cursor: pointer;
     text-align: center;
     font-size: 12px;
-    position: absolute;
+    /* position: absolute; */
 }
 .pc-icon:hover{
     background: #eee;
 }
 .mypc{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .win10-top{
     height: 30px;
@@ -312,7 +315,7 @@ h4{
 }
 .comment-user-input{
     float: left;
-    width: 70%;
+    width: 35%;
     margin: 0;
 }
 .comment-user-submit{
@@ -403,6 +406,7 @@ h4{
 }
 .post{
     padding:0 20px;
+    position: relative;
 }
 .post-content img{
     max-width: 100%;

@@ -14,5 +14,7 @@
 </div>
 </body>
 <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/layer/layer.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/index.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/desktop.js'); ?>"></script>
 </html>
