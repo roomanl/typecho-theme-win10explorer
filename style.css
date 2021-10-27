@@ -83,12 +83,17 @@ h4{
 .desktop{
     position: absolute
 }
+.desktop-list{
+    width: 100px;
+}
 .pc-icon{
     margin: 20px;
     width: 60px;
+    height: 60px;
     cursor: pointer;
     text-align: center;
     font-size: 12px;
+    float: left;
     /* position: absolute; */
 }
 .pc-icon:hover{
